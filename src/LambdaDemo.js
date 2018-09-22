@@ -10,14 +10,18 @@ const client = new ApolloClient({
 export default () => (
   <ApolloProvider client={client}>
     <Query query={query}>
-      {({ data }) => (
-        <div>
-          <br />
-          <div>A greeting from the AWS Lambda Functions: {data.hello}</div>
-          <br />
-          <img src={data.dogPhotoUrl} alt="Dog" />
-        </div>
-      )}
+      {({ data, loading }) =>
+        loading ? (
+          <div>Loading...</div>
+        ) : (
+          <div>
+            <br />
+            <div>A greeting from the AWS Lambda Functions: {data.hello}</div>
+            <br />
+            <img src={data.dogPhotoUrl} alt="Dog" />
+          </div>
+        )
+      }
     </Query>
   </ApolloProvider>
 );
