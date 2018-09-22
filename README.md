@@ -1,3 +1,14 @@
+# React + Apollo GraphQL Server built completely with Netlify
+
+Shows how to use Netlify for the front-end code along with Netlify Functions (based on AWS Lambda Functions) to power the Apollo GraphQL server.
+
+Super easy setup. This is a simple setup but I'm excited to build something more substantial with it.
+
+## Demo [here](https://netlify-full-stack-graphql.netlify.com/)
+## Based on tutorial [here](https://blog.apollographql.com/deploy-a-fullstack-apollo-app-with-netlify-45a7dfd51b0b)
+
+## Instructions to start project
+
 This project is based on [Create React App](https://github.com/facebookincubator/create-react-app). (For more information about Create react App, check their full [documentation](https://github.com/facebookincubator/create-react-app#create-react-app).)
 
 The main addition is a new folder: `src/lambda`. Each JavaScript file in there will automatically be prepared for Lambda function deployment.
