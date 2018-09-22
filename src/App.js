@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import LambdaDemo from './LambdaDemo';
-import logo from './logo.svg';
+import logo from './logomark.svg';
 import './App.css';
 
 class App extends Component {
@@ -9,12 +9,23 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">
+            Welcome to Netlify with Lambda Functions
+          </h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
         <LambdaDemo />
+        <div>
+          Based on tutorial about deploying a fullstack Apollo app with your API
+          using Netlify Functions on AWS Lambda.
+          <br />
+          <a
+            href="https://blog.apollographql.com/deploy-a-fullstack-apollo-app-with-netlify-45a7dfd51b0b"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Find it here
+          </a>
+        </div>
       </div>
     );
   }

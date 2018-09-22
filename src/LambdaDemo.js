@@ -12,7 +12,8 @@ export default () => (
     <Query query={query}>
       {({ data }) => (
         <div>
-          A greeting from the server: {data.hello}
+          <br />
+          <div>A greeting from the AWS Lambda Functions: {data.hello}</div>
           <br />
           <img src={data.dogPhotoUrl} alt="Dog" />
         </div>
