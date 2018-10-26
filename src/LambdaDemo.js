@@ -16,9 +16,9 @@ export default () => (
         ) : (
           <div>
             <br />
-            <div>A greeting from the AWS Lambda Functions: {data.hello}</div>
+            <div>A greeting from the AWS Lambda Functions:</div>
             <br />
-            <img src={data.dogPhotoUrl} alt="Dog" />
+            <img alt="Dog" />
           </div>
         )
       }
@@ -28,7 +28,6 @@ export default () => (
 
 const query = gql`
   {
-    hello
-    dogPhotoUrl
+    address
   }
 `;
